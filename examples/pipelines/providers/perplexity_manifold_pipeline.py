@@ -42,21 +42,25 @@ class Pipeline:
             'Content-Type': 'application/json'
         }
 
-    def get_perplexity_models(self):
-        return [
-            {
-                "id": "llama-3.1-sonar-small-128k-online",
-                "name": "Perplexity Llama 3.1 Sonar Small"
-            },
-            {
-                "id": "llama-3.1-sonar-large-128k-online",
-                "name": "Perplexity Llama 3.1 Sonar Large"
-            },
-            {
-                "id": "llama-3.1-sonar-huge-128k-online",
-                "name": "Perplexity Llama 3.1 Sonar Huge"
-            },
-        ]
+def get_perplexity_models(self):
+    return [
+        {
+            "id": "sonar-reasoning-pro",
+            "name": "Perplexity Sonar Reasoning Pro"
+        },
+        {
+            "id": "sonar-reasoning",
+            "name": "Perplexity Sonar Reasoning"
+        },
+        {
+            "id": "sonar-pro",
+            "name": "Perplexity Sonar Pro"
+        },
+        {
+            "id": "sonar",
+            "name": "Perplexity Sonar"
+        }
+    ]
         pass
 
     async def on_startup(self):
